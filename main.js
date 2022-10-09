@@ -1,11 +1,14 @@
-title = "";
+title = "raccoon slumber party";
 
-description = `
+description = ` 
+[hold] stay awake
 `;
 
 characters = [];
 
-options = {};
+options = {
+  isPlayingBGM: true,
+};
 
 function update() {
   if (!ticks) {
