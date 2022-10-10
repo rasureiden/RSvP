@@ -1,17 +1,28 @@
-title = "raccoon slumber party";
+title = "rs(v)p";
 
 description = ` 
-[hold] stay awake
+[hold] wake
 `;
 
-characters = [];
+characters = [
+  `y  y
+  yyyyyy
+   yyyy 
+  yyyyyy
+   yyyy 
+   y  y`
+  ,
+  `P  P`
+];
 
 options = {
   isPlayingBGM: true,
+  isReplayEnabled: true,
 };
 
 function update() {
   if (!ticks) {
+    
   }
 }
 
