@@ -1,7 +1,7 @@
 title = "rs(v)p";
 
 description = ` 
-[hold] wake
+[hold] to wake
 `;
 
 characters = [
@@ -27,8 +27,8 @@ P    P
 ];
 
 const G = {
-  WIDTH: 100,
-  HEIGHT: 110,
+  WIDTH: 310,
+  HEIGHT: 300,
 
   //TALK_SPEED: 3
 };
@@ -47,11 +47,11 @@ function update() {
   // draw characters! 
   // char(string, x, y, options?);
   // char(string, p, options?);
-  char("a", 30, 40);
-  char("b", 60, 40);
+  char("a", G.WIDTH/2.5, G.HEIGHT/5 + 20);
+  char("b", G.WIDTH/2, G.HEIGHT/5 + 20);
   // text! -> "text(string [what you want text to say], x [x coord of text], y [y coord], options? [see definitions?])"  
   // text(string, x, y, options?); text(string, p, options?); <- from https://kandi.openweaver.com/typescript/abagames/crisp-game-lib#Code-Snippets
-  text("are you awake...?", 10, 20);
+  text("are you awake...?", G.WIDTH/4, G.HEIGHT/5);
 }
 
 /**
